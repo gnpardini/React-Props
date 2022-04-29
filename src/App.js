@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import UserData from "./components/UserData";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserData
+        firstName={"Gisela"}
+        lastName={"Pardini"}
+        email={"gpardini@gmail.com"}
+      />
+      <UserData
+        firstName={"Jerry"}
+        lastName={"Smith"}
+        email={"jsmith@gmail.com"} />
+      <UserData
+        firstName={"Carlos"}
+        lastName={"Bautes"}
+        email={"cbautes@gmail.com"} />
+      <UserData
+        firstName={"Miley"}
+        lastName={"Cyrus"}
+        email={"mcyrus@gmail.com"} />
     </div>
   );
 }
